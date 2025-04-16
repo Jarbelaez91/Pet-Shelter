@@ -1,3 +1,5 @@
+import "../css/donate.css"
+
 function Donate (){
 
     return(

@@ -1,5 +1,6 @@
 import petNames from '../Data/petNames.json'
 import PetsCard from "./PetsCard";
+import "../css/home.css"
 
 function Home() {
   return (

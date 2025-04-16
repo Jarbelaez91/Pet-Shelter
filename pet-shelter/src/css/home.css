@@ -1,0 +1,51 @@
+
+/*body*/
+body{
+    width: 100%;
+    margin: 10px;
+    overflow-x: hidden;
+}
+.cards-box{
+    background-color: pink;
+    display: grid;
+    
+}
+
+
+.cards-title{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns:300px 300px 300px;
+    grid-template-rows: 430px 430px 430px;
+   justify-content: center;
+   justify-content: space-around;
+  
+}
+
+.cards{
+    background-color: lightblue;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.card-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    border: 5px solid black;
+}
+
+.display-more-button{
+    text-align: center;
+}
