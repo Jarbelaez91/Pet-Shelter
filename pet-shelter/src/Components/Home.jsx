@@ -1,13 +1,14 @@
 import petNames from '../Data/petNames.json'
+import PetsCard from "./PetsCard";
 
 function Home() {
   return (
     <div>
-      <div class="body-container">
-        <header class="body-title">
+      <div className="body-container">
+        <header className="body-title">
           <h1>WINGS, TAILS, AND SCALES</h1>
         </header>
-        <p class="body-about">
+        <p className="body-about">
           Welcome to Wings, Tails & Scales - Where Every Animal Finds a Second
           Chance! 🐾✨ From wagging tails and gentle hooves to fluttering wings
           and slithering scales, we're a sanctuary for animals of all kinds. At
@@ -19,26 +20,11 @@ function Home() {
           time! 🐕🐱🐍🦜🐴{" "}
         </p>
       </div>
-
-      <div class="cards-box">
-        <header class=" cards-title">
-          <h1>FOR ADOPTION</h1>
-        </header>
+      <PetsCard pets={petNames} />
         
-        {petNames.map((pets)=>(
-            <div key = {pets.id}>
-                <h2> {pets.name} </h2>
-                <p> {pets.species} </p>
-                <p> {pets.age} </p>
-                <img src= {pets.image} alt={`${pets.name}`}/>
-                </div>
-        ) )}
-
-        
-      <div class="display-more-button">
+      <div className="display-more-button">
         <button>DISPLAY MORE</button>
       </div>
-    </div>
     </div>
   );
 }
