@@ -1,9 +1,9 @@
-function Login (){
+function SignUp (){
     return (
 
         <div class="login-container">
         <div class ="login-container-container">
-      <h1 class="login-title">LOGIN</h1>
+      <h1 class="login-title">SIGNUP</h1>
       <form>
         <div class="form-container-container">
         <div class="form-container">
@@ -26,7 +26,7 @@ function Login (){
         <div class="submit-button-container">
         <div class="submit-button-div">
           <button class="submit-button">Submit</button>
-          <a href="signup.html">Don't have an account click here to sign up</a>
+          <a href="signup.html">Already have an account click here to Login</a>
         </div>
         </div>
       </form>
@@ -37,4 +37,4 @@ function Login (){
     )
 }
 
-export default Login
+export default SignUp
