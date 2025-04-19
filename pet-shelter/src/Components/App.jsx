@@ -4,6 +4,7 @@ import About from './About'
 import Navbar from './Navbar'
 import Donate from './Donate';
 import Home from './Home';
+import Contact from "./Contact"
 // import Login from "./Login"
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Route path= "/about" element= {<About/>} />
       {/* <Route path="/login" element= {<Login/>} /> */}
       <Route path= "/donate" element= {<Donate/>} />
+      <Route path= "/contact" element={<Contact/>}/>
     </Routes>     
     </>
   )
