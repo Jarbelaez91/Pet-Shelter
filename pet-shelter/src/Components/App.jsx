@@ -5,7 +5,8 @@ import Navbar from './Navbar'
 import Donate from './Donate';
 import Home from './Home';
 import Contact from "./Contact"
-// import Login from "./Login"
+import SignUp from "./SignUp"
+import Login from "./Login"
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
       <Route path="/login" element= {<Login/>} />
       <Route path= "/donate" element= {<Donate/>} />
       <Route path= "/contact" element={<Contact/>}/>
+      <Route path="/signup" element={<SignUp/>}/>
 
     </Routes>     
     </>
