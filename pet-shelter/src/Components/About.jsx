@@ -31,7 +31,7 @@ function About () {
 <li>🦎 Lizards - Unique reptilian companions for exotic pet lovers.</li>
 <li>🐭 Mice & Small Critters - Perfect for small-space pet lovers.</li>
 </ul>
-<p className="donate-here"> Don't have the time or space at the moment you can always <a className="donate-here-link" href="donate.html">  Donate here </a> </p>
+<p className="donate-here"> Don't have the time or space at the moment you can always <a className="donate-here-link" href="/donate">  Donate here </a> </p>
 </div>
 </div>
 </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../css/contact.css"
 
 function Contact() {
   const [petName, setPetName] = useState("");
@@ -18,11 +19,14 @@ function Contact() {
   };
 
   return (
-    <div>
+    <div className="contact-container">
+      <div className="contact">
       <h1>Contact us</h1>
       <h2>Tell us more about the pet!</h2>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name"> Name</label>
+      <form  onSubmit={handleSubmit}>
+        <div>
+        <div className="contact-form">
+        <label  htmlFor="name"> Name</label>
         <input
           className="inputs"
           type="text"
@@ -33,6 +37,8 @@ function Contact() {
           onChange={(e) => setPetName(e.target.value)}
           required
         />
+        </div>
+        <div className="contact-form">
         <label htmlFor="species"> species</label>
         <input
           className="inputs"
@@ -44,6 +50,8 @@ function Contact() {
           onChange={(e) => setSpecies(e.target.value)}
           required
         />
+        </div>
+        <div className="contact-form">
         <label htmlFor="age"> Age</label>
         <input
           className="inputs"
@@ -55,19 +63,24 @@ function Contact() {
           onChange={(e) => setAge(e.target.value)}
           required
         />
+        </div>
+      
+        <div className="contact-form">
         <label htmlFor="about-pet"> Tell us about them!</label>
         <textarea
-          className="inputs"
           id="about-pet"
           placeholder="tell us about the critter "
           value={about}
           onChange={(e) => setAbout(e.target.value)}
           required
         />
+        </div>
+        </div>
 
         <button type="submit">Submit</button>
       </form>
       {submitted && <p> The form has successfully been submitted, Thank you!</p>}
+    </div>
     </div>
   );
 }

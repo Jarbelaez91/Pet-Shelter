@@ -2,13 +2,15 @@
 
 .navbar-box{
     font-size: 20px;
-    width: auto;
+    width: 100%;
     height: auto;
     background-color: pink;
-    padding: 40px;
-    display: inline-block;
+    padding:  40px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
+    position: fixed;
+    top: 0;
+    left: 0;
     
 }
 
