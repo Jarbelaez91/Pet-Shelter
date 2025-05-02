@@ -19,6 +19,7 @@ function Contact() {
   };
 
   return (
+    <div className="contact-page">
     <div className="contact-container">
       <div className="contact">
       <h1>Contact us</h1>
@@ -80,6 +81,7 @@ function Contact() {
         <button type="submit">Submit</button>
       </form>
       {submitted && <p> The form has successfully been submitted, Thank you!</p>}
+    </div>
     </div>
     </div>
   );

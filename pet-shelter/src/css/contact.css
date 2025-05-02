@@ -3,37 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+
+html, body {
     width: 100%;
     height: 100%;
 }
+
+
 .contact-container{
     background-color: pink;
     width: 100%;
     padding: 20px;     
     box-sizing: border-box; 
     border: solid yellow 1px;
+    display: flex;
+    justify-content: center;
     
 }
 
 .contact-form{
-    width: 100%;
-    font-size: 20px;
-    border: solid blue 1px;
+    width: 80%;
+    font-size: 25px;
+    border: solid red 1px;
+    display: flex;
     flex-direction: column;
-    
-   
-
+    margin-bottom: 10px;
+    justify-content: center;
 }
 
 .contact{
    
-    width: 100%;
+    width: 50%;
     height: auto;
     border: solid purple 1px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 
 }
 
@@ -41,7 +46,20 @@ body {
     border: solid green 2px;
     display: flex;
    justify-content: flex-start;
-   
+}
 
-    
+.contact-page{
+    border: solid orange 2px;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.inputs,
+textarea {
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 16px;
 }
