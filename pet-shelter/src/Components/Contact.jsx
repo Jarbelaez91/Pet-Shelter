@@ -22,12 +22,12 @@ function Contact() {
     <div className="contact-page">
     <div className="contact-container">
       <div className="contact">
-      <h1>Contact us</h1>
-      <h2>Tell us more about the pet!</h2>
+      <h1 className="contact-header">Contact us</h1>
+      <h2 className="contact-subheader">Tell us more about the critter!</h2>
       <form  onSubmit={handleSubmit}>
         <div>
         <div className="contact-form">
-        <label  htmlFor="name"> Name</label>
+        <label className="contact-label"  htmlFor="name"> Name</label>
         <input
           className="inputs"
           type="text"
@@ -40,7 +40,7 @@ function Contact() {
         />
         </div>
         <div className="contact-form">
-        <label htmlFor="species"> species</label>
+        <label className="contact-label" htmlFor="species"> species</label>
         <input
           className="inputs"
           type="text"
@@ -53,7 +53,7 @@ function Contact() {
         />
         </div>
         <div className="contact-form">
-        <label htmlFor="age"> Age</label>
+        <label className="contact-label" htmlFor="age"> Age</label>
         <input
           className="inputs"
           type="number"
@@ -67,7 +67,7 @@ function Contact() {
         </div>
       
         <div className="contact-form">
-        <label htmlFor="about-pet"> Tell us about them!</label>
+        <label className="contact-label" htmlFor="about-pet"> Tell us about them!</label>
         <textarea
           id="about-pet"
           placeholder="tell us about the critter "
@@ -78,7 +78,7 @@ function Contact() {
         </div>
         </div>
 
-        <button type="submit">Submit</button>
+        <button className="contact-button" type="submit">Submit</button>
       </form>
       {submitted && <p> The form has successfully been submitted, Thank you!</p>}
     </div>

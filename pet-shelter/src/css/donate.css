@@ -1,4 +1,3 @@
-/*donation page */
 
 .donation-container{
     padding: 10px;
@@ -23,7 +22,6 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;   
-    font-size: 1em;
 }
 
 .donation-p h3{
@@ -46,10 +44,12 @@
 
 .price-title{
     text-align: center;
+    font-size: 70px;
 }
 
 .donation-title{
     text-align: center;
+    font-size: 70px;
     
 }
 
@@ -116,4 +116,12 @@
     flex-direction: column;
     align-items: center;
     
+}
+
+.price{
+    font-size: 48px;
+}
+
+.donation-description{
+    font-size: 24px;
 }

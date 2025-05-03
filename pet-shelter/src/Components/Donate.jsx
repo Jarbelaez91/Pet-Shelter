@@ -26,33 +26,33 @@ const handleSubmit = (e) => {
           <h1 className=" price-title"> How your donations help</h1>
 
           <div className="donation-p">
-            <h3> $50 </h3>
-            <p> - Supplies for a month for any pet</p>
-            <p> - Covers basic vaccinations for a small animal </p>
-            <h3> $100 </h3>
-            <p> - Fund a veterinary wellness check for a pet</p>
-            <p>
+            <h3 className="price"> $50 </h3>
+            <p className="donation-description" > - Supplies for a month for any pet</p>
+            <p className="donation-description"> - Covers basic vaccinations for a small animal </p>
+            <h3 className="price"> $100 </h3>
+            <p className="donation-description"> - Fund a veterinary wellness check for a pet</p>
+            <p className="donation-description">
               {" "}
               - Supply a cozy bed, toys, and enrichment materials for a fostered
               animal
             </p>
-            <h3> $150 </h3>
-            <p>
+            <h3 className="price"> $150 </h3>
+            <p className="donation-description">
               {" "}
               - Cover flea, tick and parasite prevention for a pet for several
               months
             </p>
-            <p>
+            <p className="donation-description">
               {" "}
               - Provides heat lamps, enclosures or specialized diets for
               reptiles and exotic pets
             </p>
-            <h3> $250 </h3>
-            <p> - Pays for a spay/neuter surgery for a dog, cat or rabbit</p>
-            <p> - Covers emergency medical care for an injured or sick pet</p>
-            <h3> $500 </h3>
-            <p> - Funds a life saving surgery for intensive care treatment</p>
-            <p> - Supplies for about 10 small animals or 5 big animals</p>
+            <h3 className="price"> $250 </h3>
+            <p className="donation-description"> - Pays for a spay/neuter surgery for a dog, cat or rabbit</p>
+            <p className="donation-description"> - Covers emergency medical care for an injured or sick pet</p>
+            <h3 className="price"> $500 </h3>
+            <p className="donation-description"> - Funds a life saving surgery for intensive care treatment</p>
+            <p className="donation-description"> - Supplies for about 10 small animals or 5 big animals</p>
           </div>
         </div>
         <div className="donation-container-container">

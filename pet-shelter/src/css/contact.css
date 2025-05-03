@@ -63,3 +63,20 @@ textarea {
     padding: 8px;
     font-size: 16px;
 }
+
+.contact-header{
+    font-size: 80px;
+    text-align: center;
+}
+
+.contact-subheader{
+    font-size: 48px;
+    text-align: center;
+}
+.contact-label{
+    font-size: 36px;
+}
+
+.contact-button{
+  font-size: 30px;
+}
