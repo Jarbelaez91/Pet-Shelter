@@ -1,8 +1,26 @@
-import petNames from '../Data/petNames.json'
+// import petNames from '../Data/petNames.json'
 import PetsCard from "./PetsCard";
 import "../css/home.css"
+import { useEffect, useState } from 'react';
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 
 function Home() {
+
+const [pets, setPets] = useState ([])
+
+  useEffect(() => {
+  fetch(`${API_BASE_URL}/api/pets`)
+    .then(res => res.json())
+    .then(data => {
+      setPets(data.data.pets); 
+    })
+    .catch(error => {
+      console.error("try again", error);
+    });
+}, []);
+
   return (
     <div>
       <div className="body-container">
@@ -21,7 +39,7 @@ function Home() {
           time! 🐕🐱🐍🦜🐴{" "}
         </p>
       </div>
-      <PetsCard pets={petNames} />
+      <PetsCard pets={pets} />
         
       <div className="display-more-button">
         <button>DISPLAY MORE</button>
