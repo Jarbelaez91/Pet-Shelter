@@ -1,9 +1,9 @@
 function NewDonations() {
 
     return(
-        <h1>
+        <h3>
             NewDonations
-        </h1>
+        </h3>
     )
 }
 
