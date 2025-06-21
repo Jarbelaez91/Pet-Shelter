@@ -11,8 +11,9 @@
 .about-container{
     border: 2px solid black;
     margin: 20px;
-    background-color: pink;
+    background: linear-gradient(30deg, #3CB371, #07aeea);
     width: 50%;
+    margin-top: 450px;
     
 }
 

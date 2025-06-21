@@ -4,7 +4,7 @@
     font-size: 20px;
     width: 100%;
     height: auto;
-    background-color: pink;
+        background: linear-gradient(180deg, #3CB371, #07aeea);
     padding:  40px;
     display: flex;
     justify-content: space-evenly; 
