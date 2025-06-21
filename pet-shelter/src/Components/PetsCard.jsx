@@ -1,7 +1,9 @@
 import React from 'react'
 import "../css/home.css"
 
-export default function PetsCard({ pets }) {
+const defaultPet = "/images/defaultPet.png"
+
+function PetsCard({ pets }) {
   return (
     <div>
 
@@ -12,7 +14,7 @@ export default function PetsCard({ pets }) {
         <div className="card-container"> 
         {pets.map((pet)=>(
             <div className='cards' key = {pet.id}>
-                <img  className="card-img" src= {pet.image} alt={`${pet.name}`}/>
+                <img  className="card-img" src= {pet.image || defaultPet} alt={`${pet.name}`}/>
                 <h2> {pet.name} </h2>
                 <p> {pet.species} </p>
                 <p > {pet.age} </p>
@@ -24,3 +26,5 @@ export default function PetsCard({ pets }) {
     </div>
   )
 }
+
+export default PetsCard

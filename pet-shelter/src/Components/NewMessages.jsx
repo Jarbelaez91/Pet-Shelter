@@ -1,9 +1,9 @@
 function NewMessages() {
 
     return(
-        <h1>
-            NewMessages
-        </h1>
+        <h3>
+            New Messages
+        </h3>
     )
 }
 

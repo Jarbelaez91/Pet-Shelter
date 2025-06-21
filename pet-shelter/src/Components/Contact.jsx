@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "../css/contact.css"
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+
 function Contact() {
   const [petName, setPetName] = useState("");
   const [species, setSpecies] = useState("");
@@ -10,12 +13,36 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({ petName, species, age, about });
-    setSubmitted (true)
-    setPetName ("")
-    setSpecies ("")
-    setAge ("")
-    setAbout ("")
+
+    fetch(`${API_BASE_URL}/api/pets/create/new`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify ({
+      name: petName,
+      species: species,
+      age: age,
+    }),
+    })
+    .then ((res) => {
+      if (!res.ok) {
+        throw new Error ("form not submitted")
+      }
+      return res.json()
+    })
+
+    .then (() => {
+      console.log({ petName, species, age, about });
+      setSubmitted (true)
+      setPetName ("")
+      setSpecies ("")
+      setAge ("")
+      setAbout ("")
+    })
+    .catch ((error) => {
+      console.error ("error with form", error)
+    })
   };
 
   return (
@@ -56,7 +83,7 @@ function Contact() {
         <label className="contact-label" htmlFor="age"> Age</label>
         <input
           className="inputs"
-          type="number"
+          type="text"
           name="age"
           id="age"
           placeholder="critters age"
