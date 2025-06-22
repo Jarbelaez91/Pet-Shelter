@@ -1,20 +1,20 @@
 import React from 'react'
 import "../css/home.css"
-import { useState } from 'react';
+import { useState } from 'react'
 
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
 
 const defaultPet = "/images/defaultPet.png"
 
 function PetsCardTwo({ pets, setPets }) {
-  const [editId, setEditId] = useState(null);
-  const [newAge, setNewAge] = useState("");
+  const [editId, setEditId] = useState(null)
+  const [newAge, setNewAge] = useState("")
 
   const handleEdit = (pet) => {
-    setEditId(pet._id);
-    setNewAge(pet.age);
-  };
+    setEditId(pet._id)
+    setNewAge(pet.age)
+  }
 
   const handleSave = (id) => {
   fetch(`${API_BASE_URL}/api/pets/update/${id}`, {
@@ -27,29 +27,40 @@ function PetsCardTwo({ pets, setPets }) {
    .then(res => res.json())
 
 .then((response) => {
-  console.log("Update response:", response);
+  console.log("Update response:", response)
 
   if (!response.data || !response.data.updatePet) {
-    throw new Error("Invalid response structure or update failed");
+    throw new Error("Invalid response structure or update failed")
   }
 
-  const updatedPet = response.data.updatePet;
-  setPets(prev => prev.map(p => (p._id === id ? updatedPet : p)));
-  setEditId(null);
+  const updatedPet = response.data.updatePet
+  setPets((previousPets) => {
+  return previousPets.map((pet) => {
+    if (pet._id === id) {
+      return updatedPet;
+    } else {
+      return pet;
+    }
+  })
 })
-    .catch(err => console.error("Update failed", err));
-};
+
+  setEditId(null)
+})
+    .catch(err => console.error("Update failed", err))
+}
 
   const handleAdopt = (id) => {
     fetch(`${API_BASE_URL}/api/pets/delete/${id}`, {
       method: "DELETE",
     })
       .then(res => {
-        if (!res.ok) throw new Error("Delete failed");
-        setPets(prev => prev.filter(p => p._id !== id));
+        if (!res.ok) throw new Error("Delete failed")
+        setPets((previousPets) => {
+  return previousPets.filter((pet) => pet._id !== id)
+})
       })
-      .catch(err => console.error("Delete error", err));
-  };
+      .catch(err => console.error("Delete error", err))
+  }
 
 
   return (
@@ -92,7 +103,7 @@ function PetsCardTwo({ pets, setPets }) {
         ))}
       </div>
     </div>
-  );
+  )
 }
 
-export default PetsCardTwo;
+export default PetsCardTwo
