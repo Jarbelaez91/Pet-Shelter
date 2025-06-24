@@ -18,6 +18,7 @@ html, body {
     display: flex;
     justify-content: center;
     background: linear-gradient(30deg, #3CB371, #07aeea);
+    height: 750px;
 
     
     

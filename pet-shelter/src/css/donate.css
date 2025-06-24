@@ -4,7 +4,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 500px;
+    margin-top: 860px;
 
  
 }
@@ -91,9 +91,9 @@
     margin: 50px;
     border: 2px solid black;
     width: auto;
-    height: auto;
+    height: 800px;
     display: flex;
-        background: linear-gradient(30deg, #3CB371, #07aeea);
+    background: linear-gradient(30deg, #3CB371, #07aeea);
     flex-direction: column;
 }
 

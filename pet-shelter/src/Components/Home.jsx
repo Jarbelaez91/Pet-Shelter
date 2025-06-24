@@ -22,7 +22,7 @@ const [pets, setPets] = useState ([])
 }, []);
 
   return (
-    <div>
+    <div className="wrapper">
       <div className="body-container">
         <header className="body-title">
           <h1>WINGS, TAILS, AND SCALES</h1>

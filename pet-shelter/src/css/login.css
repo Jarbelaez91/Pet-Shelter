@@ -3,6 +3,7 @@
 .login-container{
     display: flex;
     justify-content: center;
+    margin-top: 100px;
 }
 
 .login-title{
@@ -41,7 +42,7 @@
     display: flex;
     flex-direction: column;
     background: linear-gradient(30deg, #3CB371, #07aeea);
-    padding: 50px;
+    padding: 20px;
 }
 
 .submit-button{

@@ -4,7 +4,13 @@ body{
     width: 100%;
     margin: 10px;
     overflow-x: hidden;
+    margin-top: 100px;
 }
+
+/* .wrapper {
+  padding-top: 2000px;
+} */
+
 .cards-box{
     background: linear-gradient(130deg, #3CB371, #07aeea);
     display: grid;
@@ -65,5 +71,6 @@ body{
 
 .body-container{
         background: linear-gradient(30deg, #3CB371, #07aeea);
-    margin-top: 1490px;
+      margin-top: 1800px;
+
 }
