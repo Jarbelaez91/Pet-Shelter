@@ -88,7 +88,7 @@ const handleSubmit = (e) => {
                   />
                 </div>
                 <div className="form-lines">
-                  <label htmlFor="email"> Email Address </label>
+                  <label htmlFor="email"> Email </label>
                   <input
                     className="inputs"
                     type="email"
@@ -102,7 +102,7 @@ const handleSubmit = (e) => {
                 </div>
 
                 <div className="form-lines">
-                  <label htmlFor="last-name"> Donation Amount $ </label>
+                  <label htmlFor="last-name"> Donation </label>
                   <input
                     className="inputs"
                     type="number"

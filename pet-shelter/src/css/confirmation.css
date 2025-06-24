@@ -1,0 +1,28 @@
+.confirmation{
+    font-size: 60px;
+    padding: 180px;
+    text-align: center;
+        background: linear-gradient(30deg, #3CB371, #07aeea);
+
+        color: white;
+}
+
+.light-mode-confirmation{
+    font-size: 60px;
+    padding: 180px;
+    text-align: center;
+        background: linear-gradient(315deg, #011128, #02022d 40%, #010117 70%);
+}
+
+.backHomeButton{
+    background-color: transparent; 
+    border: none; 
+    padding: 0; 
+    font-size: 25px; 
+    cursor: pointer;
+    color: white;
+}
+
+.light-mode-back{
+    color: #08192A;
+}

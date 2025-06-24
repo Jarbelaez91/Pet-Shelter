@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import "../css/nav.css"
 
-function Navbar(){
+function Navbar({darkModeEnabled}){
     
     return (
-        <nav className="navbar-box">
+        <nav className={`navbar-box ${darkModeEnabled ? "light-nav" : ""} `}>
           <Link to=  "/" className="nav-links"> Home </Link>
           <Link to= "/about"className="nav-links"> About </Link>
           <Link to= "/login"className="nav-links"> Login </Link>

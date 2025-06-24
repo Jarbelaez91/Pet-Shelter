@@ -12,7 +12,7 @@
     border: 2px solid black;
     margin: 20px;
     background: linear-gradient(30deg, #3CB371, #07aeea);
-    width: 50%;
+    width: 80%;
     margin-top: 850px;
     
 }
@@ -29,21 +29,24 @@
 }
 
 .about-paragraph{
-    width: 50%;
-    font-size: 20px;
+    width: 90%;
+    font-size: 32px;
 }
 .adoption-details-container{
     display: flex;
     display: inline;
     text-align: center;
+    font-size: 28px;
 }
 
 .adoption-details-title{
     text-align: center;
+        font-size: 28px;
+
 }
 
 .adoption-numbers{
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .adoption-available{
@@ -67,4 +70,8 @@
 .donate-here-link{
    font-weight: bold;
    margin-left: 5px;
+}
+
+.light-cards-box{
+        background: linear-gradient(315deg, #011128, #02022d 40%, #010117 70%);
 }

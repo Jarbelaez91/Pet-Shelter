@@ -1,9 +1,16 @@
+import "../css/newMessages.css"
+
 function NewDonations() {
 
     return(
-        <h3>
+        <div className="newDonations">
+            <h3>
             NewDonations
-        </h3>
+            </h3>
+            <h4>
+            where donation notifications will go
+            </h4>
+        </div>
     )
 }
 

@@ -4,7 +4,7 @@
     font-size: 20px;
     width: 100%;
     height: auto;
-        background: linear-gradient(180deg, #3CB371, #07aeea);
+    background: linear-gradient(180deg, #3CB371, #07aeea);
     padding:  40px;
     display: flex;
     justify-content: space-evenly; 
@@ -17,4 +17,9 @@
 .nav-links{
     font-weight: bold;
    
+}
+
+.light-nav{
+    background: linear-gradient(315deg, #011128, #02022d 40%, #010117 70%);
+
 }

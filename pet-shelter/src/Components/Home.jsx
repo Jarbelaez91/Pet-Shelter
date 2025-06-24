@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 
-function Home() {
+function Home({darkModeEnabled}) {
 
 const [pets, setPets] = useState ([])
 
@@ -23,7 +23,7 @@ const [pets, setPets] = useState ([])
 
   return (
     <div className="wrapper">
-      <div className="body-container">
+      <div className= {`body-container ${darkModeEnabled ? "light-mode-body" : ""} `} >
         <header className="body-title">
           <h1>WINGS, TAILS, AND SCALES</h1>
         </header>
@@ -39,7 +39,7 @@ const [pets, setPets] = useState ([])
           time! 🐕🐱🐍🦜🐴{" "}
         </p>
       </div>
-      <PetsCard pets={pets} />
+      <PetsCard pets={pets} darkModeEnabled={darkModeEnabled} />
         
       <div className="display-more-button">
         <button>DISPLAY MORE</button>

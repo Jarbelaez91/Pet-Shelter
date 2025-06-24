@@ -1,15 +1,18 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom"
 import "../css/contact.css"
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 
 function Contact() {
-  const [petName, setPetName] = useState("");
-  const [species, setSpecies] = useState("");
+  const [petName, setPetName] = useState("")
+  const [species, setSpecies] = useState("")
   const [age, setAge] = useState("");
-  const [about, setAbout] = useState("");
+  const [about, setAbout] = useState("")
   const [submitted, setSubmitted] = useState (false)
+  const navigate = useNavigate()
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,6 +42,7 @@ function Contact() {
       setSpecies ("")
       setAge ("")
       setAbout ("")
+      navigate("/confirmation")
     })
     .catch ((error) => {
       console.error ("error with form", error)

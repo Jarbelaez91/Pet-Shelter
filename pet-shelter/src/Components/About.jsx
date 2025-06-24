@@ -1,12 +1,12 @@
 import "../css/about.css"
 
-function About () {
+function About ({darkModeEnabled}) {
 
     return(
       <>
 
 <div className="about-container-container">
-<div className="about-container">
+<div className={`about-container ${darkModeEnabled ? "light-cards-box" : ""} `}>
 <header className="about-title">  
   <h1> ABOUT WINGS TAILS AND SCALES </h1>
 </header>
